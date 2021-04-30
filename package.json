@@ -6,7 +6,8 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "dependencies": {
     "@stitches/react": "^0.1.9",

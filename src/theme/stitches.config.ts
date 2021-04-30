@@ -21,11 +21,11 @@ export const { styled, theme, global } = createCss({
       // Theme UI
       text: '$coolGray900',
       background: '$coolGray50',
-      primary: 'blue',
-      secondary: 'red',
-      accent: 'blue',
+      primary: '$blue500',
+      secondary: '$red500',
+      accent: '$emerald500',
       highlighted: 'blue',
-      muted: 'silver',
+      muted: '$coolGray300',
     },
     fonts: {
       sans:
@@ -44,6 +44,7 @@ export const { styled, theme, global } = createCss({
       7: '27px',
       8: '35px',
       9: '59px',
+      body: '16px',
     },
     fontWeights: {
       thin: '100',
@@ -193,6 +194,7 @@ export const globalStyles = global({
     margin: 0,
     fontFamily: '$sans',
     bg: '$background',
+    color: '$coolGray800',
   },
   '*, *::before, *::after': {
     boxSizing: 'border-box',

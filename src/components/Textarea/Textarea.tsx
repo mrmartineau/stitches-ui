@@ -6,6 +6,7 @@ export const Textarea = styled('textarea', {
   p: '$2',
   appearance: 'none',
   fontSize: 'inherit',
+  fontFamily: 'inherit',
   lineHeight: 'inherit',
   border: '1px solid',
   borderRadius: '$2',

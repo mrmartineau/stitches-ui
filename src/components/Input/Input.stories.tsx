@@ -25,6 +25,7 @@ Basic.args = {
 export const BasicSize2 = Template.bind({})
 BasicSize2.args = {
   value: 'Size 2',
+  size: '2',
 }
 
 export const WithPlaceholder = Template.bind({})

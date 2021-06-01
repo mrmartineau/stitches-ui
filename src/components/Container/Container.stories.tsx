@@ -19,5 +19,6 @@ const Template: Story = (args) => <Container {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {
-  children: 'A basic container',
+  children:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique nulla repellendus repudiandae voluptas minus molestias impedit explicabo fugit, ipsum, amet harum nisi optio vero quidem obcaecati aperiam esse quo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique nulla repellendus repudiandae voluptas minus molestias impedit explicabo fugit, ipsum, amet harum nisi optio vero quidem obcaecati aperiam esse quo.',
 }

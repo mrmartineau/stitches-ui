@@ -28,7 +28,7 @@ WithCss.args = {
   css: {
     bg: '$indigo300',
     p: '$2',
-    borderRadius: '$2',
+    borderRadius: '$default',
     minHeight: '200px',
   },
 }

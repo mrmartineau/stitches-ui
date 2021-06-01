@@ -1,4 +1,5 @@
 import { styled } from '../../theme/stitches.config'
+import { sharedInputStyles } from '../Input/Input'
 
 export const Textarea = styled('textarea', {
   display: 'block',
@@ -9,7 +10,9 @@ export const Textarea = styled('textarea', {
   fontFamily: 'inherit',
   lineHeight: 'inherit',
   border: '1px solid',
-  borderRadius: '$2',
+  borderRadius: '$default',
   color: 'inherit',
   bg: 'transparent',
+
+  ...sharedInputStyles,
 })

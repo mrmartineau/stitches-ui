@@ -17,7 +17,8 @@ export default {
 
 const Template: Story = (args) => <Text {...args} />
 
-export const Basic = Template.bind({})
-Basic.args = {
+export const caps = Template.bind({})
+caps.args = {
   children: 'Lorem ipsum dolor sit amet',
+  variant: 'caps',
 }

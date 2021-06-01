@@ -24,7 +24,7 @@ export const Button = styled('button', {
 
   // Custom
   border: 'none',
-  borderRadius: '$2',
+  borderRadius: '$default',
   height: '$5',
   px: '$2',
   fontFamily: '$sans',
@@ -55,7 +55,6 @@ export const Button = styled('button', {
       },
     },
     variant: {
-      // w-full sm:w-auto flex-none bg-gray-900 hover:bg-gray-700 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200
       primary: {
         backgroundColor: '$coolGray900',
         color: '$background',
@@ -150,75 +149,4 @@ export const Button = styled('button', {
     size: '1',
     variant: 'primary',
   },
-
-  // // mini reset
-  // appearance: 'none',
-  // border: 'none',
-  // backgroundColor: 'transparent',
-  // lineHeight: 1,
-  // borderRadius: '99999px',
-  // px: '$1',
-
-  // display: 'inline-flex',
-
-  // variants: {
-  //   size: {
-  //     1: {
-  //       fontSize: '13px',
-  //       height: '25px',
-  //     },
-  //     2: {
-  //       fontSize: '15px',
-  //       height: '35px',
-  //     },
-  //   },
-  //   variant: {
-  //     gray: {
-  //       backgroundColor: '$gray400',
-  //       '&:hover': {
-  //         backgroundColor: '$gray500',
-  //       },
-  //     },
-  //     primary: {
-  //       backgroundColor: '$primary',
-  //       color: 'white',
-  //       '&:hover': {
-  //         backgroundColor: '$primaryDark',
-  //       },
-  //     },
-  //   },
-  //   outlined: {
-  //     true: {
-  //       $$shadowColor: 'transparent',
-  //       backgroundColor: 'transparent',
-  //       boxShadow: '0 0 0 1px $$shadowColor',
-  //     },
-  //   },
-  // },
-
-  // defaultVariants: {
-  //   variant: 'gray',
-  //   size: '1',
-  // },
-
-  // compoundVariants: [
-  //   {
-  //     variant: 'gray',
-  //     outlined: true,
-  //     css: {
-  //       $$shadowColor: '$colors$gray400',
-  //     },
-  //   },
-  //   {
-  //     variant: 'primary',
-  //     outlined: true,
-  //     css: {
-  //       $$shadowColor: '$colors$primary',
-  //       color: '$primary',
-  //       '&:hover': {
-  //         color: 'white',
-  //       },
-  //     },
-  //   },
-  // ],
 })

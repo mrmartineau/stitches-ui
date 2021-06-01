@@ -1,76 +1,16 @@
+import { focusVisibleOutset } from '../../theme/focus.styles'
 import { styled } from '../../theme/stitches.config'
 
-export const Input = styled('input', {
-  // Reset
-  appearance: 'none',
-  display: 'block',
-  border: 0,
-  fontFamily: 'inherit',
-  fontSize: '$body',
-  margin: 0,
-  outline: 'none',
-  padding: 0,
-  width: '100%',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-
-  // Custom
-  // border: '1px solid $coolGray600',
-  // borderRadius: '$2',
-  // // height: '$5',
-  // p: '$2',
-  // fontFamily: '$sans',
-  // fontSize: '$2',
-  // fontWeight: 500,
-  // fontVariantNumeric: 'tabular-nums',
-  // color: '$coolGray700',
-
-  // '&:disabled': {
-  //   backgroundColor: '$coolGray100',
-  //   boxShadow: 'inset 0 0 0 1px $colors$coolGray400',
-  //   color: '$coolGray700',
-  //   pointerEvents: 'none',
-  //   cursor: 'not-allowed',
-  // },
-  // '&::placeholder': {
-  //   color: 'inherit',
-  //   opacity: 0.7,
-  // },
-  // '&[readonly]': {
-  //   borderStyle: 'dotted',
-  //   cursor: 'not-allowed',
-  //   color: '$coolGray400',
-  // },
-
-  backgroundColor: '$background',
-  boxShadow: 'inset 0 0 0 1px $colors$coolGray600',
-  borderRadius: '$2',
-  color: '$text',
-  fontVariantNumeric: 'tabular-nums',
-
-  '&:-webkit-autofill': {
-    boxShadow:
-      'inset 0 0 0 1px $colors$blue500, inset 0 0 0 100px $colors$blue200',
-  },
-
-  '&:-webkit-autofill::first-line': {
-    fontFamily: '$sans',
-    color: '$text',
-  },
+export const sharedInputStyles = {
+  ...focusVisibleOutset,
 
   '&:focus': {
-    boxShadow:
-      'inset 0px 0px 0px 1px $colors$primary, 0px 0px 0px 1px $colors$primary',
-    '&:-webkit-autofill': {
-      boxShadow:
-        'inset 0px 0px 0px 1px $colors$primary, 0px 0px 0px 1px $colors$primary, inset 0 0 0 100px $colors$blue200',
-    },
+    borderColor: '$primary',
   },
-  '&::placeholder': {
-    color: '$coolGray800',
-  },
+
   '&:disabled,&:read-only': {
     backgroundColor: '$coolGray200',
-    boxShadow: 'inset 0px 0px 0px 1px $colors$coolGray400',
+    borderColor: '$coolGray400',
   },
   '&:disabled': {
     pointerEvents: 'none',
@@ -82,8 +22,43 @@ export const Input = styled('input', {
   },
   '&:read-only': {
     '&:focus': {
-      boxShadow: 'inset 0px 0px 0px 2px $colors$primary',
+      borderColor: '$primary',
     },
+  },
+}
+
+export const Input = styled('input', {
+  // Reset
+  appearance: 'none',
+  display: 'block',
+  fontFamily: 'inherit',
+  fontSize: '$body',
+  margin: 0,
+  outline: 'none',
+  padding: 0,
+  width: '100%',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+
+  backgroundColor: '$background',
+  border: '1px solid $colors$coolGray500',
+  borderRadius: '$default',
+  color: '$text',
+  fontVariantNumeric: 'tabular-nums',
+
+  ...sharedInputStyles,
+
+  '&:-webkit-autofill': {
+    // boxShadow:
+    //   'inset 0 0 0 1px $colors$blue500, inset 0 0 0 100px $colors$blue200',
+  },
+
+  '&:-webkit-autofill::first-line': {
+    fontFamily: '$sans',
+    color: '$text',
+  },
+
+  '&::placeholder': {
+    color: '$coolGray800',
   },
 
   variants: {

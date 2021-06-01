@@ -26,7 +26,7 @@ Basic.args = {
         css={{
           bg: '$indigo300',
           p: '$2',
-          borderRadius: '$2',
+          borderRadius: '$default',
         }}
       >
         1
@@ -35,7 +35,7 @@ Basic.args = {
         css={{
           bg: '$rose300',
           p: '$2',
-          borderRadius: '$2',
+          borderRadius: '$default',
         }}
       >
         2
@@ -44,7 +44,7 @@ Basic.args = {
         css={{
           bg: '$cyan300',
           p: '$2',
-          borderRadius: '$2',
+          borderRadius: '$default',
         }}
       >
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsa

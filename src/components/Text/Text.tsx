@@ -11,7 +11,4 @@ export const Text = styled('span', {
       },
     },
   },
-  defaultVariants: {
-    variant: 'caps',
-  },
 })

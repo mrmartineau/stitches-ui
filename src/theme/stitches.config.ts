@@ -7,7 +7,7 @@ import type {
   PaddingTopProperty,
   WidthProperty,
   BackgroundProperty,
-} from '@stitches/core/types/css-types'
+} from '@stitches/react/types/css-types'
 import { tailwindColors } from './tailwindColors'
 
 type TLength = (string & {}) | 0

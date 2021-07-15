@@ -68,14 +68,28 @@ function App() {
         <Box>
           <Heading as="h2">Headings</Heading>
 
-          <Heading as="h1">h1</Heading>
-          <Heading as="h2">h2</Heading>
-          <Heading as="h3">h3</Heading>
-          <Heading as="h4">h4</Heading>
-          <Heading as="h5">h5</Heading>
-          <Heading as="h6">h6</Heading>
+          <Heading as="h1" variant="h1">
+            h1
+          </Heading>
+          <Heading as="h2" variant="h2">
+            h2
+          </Heading>
+          <Heading as="h3" variant="h3">
+            h3
+          </Heading>
+          <Heading as="h4" variant="h4">
+            h4
+          </Heading>
+          <Heading as="h5" variant="h5">
+            h5
+          </Heading>
+          <Heading as="h6" variant="h6">
+            h6
+          </Heading>
 
-          <Pre>&lt;Heading as="h1"&gt;Lorem ipsum&lt;/Heading&gt;</Pre>
+          <Pre>
+            &lt;Heading as="h1" variant="h1"&gt;Lorem ipsum&lt;/Heading&gt;
+          </Pre>
         </Box>
 
         <Box>

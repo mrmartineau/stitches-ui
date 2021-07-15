@@ -40,7 +40,7 @@ export const Input = styled('input', {
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
 
   backgroundColor: '$background',
-  border: '1px solid $colors$coolGray500',
+  border: '1px solid $colors$coolGray400',
   borderRadius: '$default',
   color: '$text',
   fontVariantNumeric: 'tabular-nums',

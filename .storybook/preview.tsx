@@ -1,10 +1,10 @@
 import React from 'react'
-import { withPaddings } from 'storybook-addon-paddings'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { globalStyles } from '../src/theme/stitches.config'
+import { jsxDecorator } from 'storybook-addon-jsx'
 
 export const parameters = {
-  layout: 'fullscreen',
+  layout: 'padded',
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
@@ -65,7 +65,7 @@ export const parameters = {
 }
 
 export const decorators = [
-  withPaddings,
+  jsxDecorator,
   (Story) => {
     globalStyles()
     return <Story />

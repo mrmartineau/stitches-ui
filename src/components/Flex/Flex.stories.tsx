@@ -56,8 +56,15 @@ Basic.args = {
   ),
 }
 
-export const WithCss = Template.bind({})
-WithCss.args = {
+export const usingProps = Template.bind({})
+usingProps.args = {
+  ...Basic.args,
+  gap: 2,
+  align: 'center',
+  direction: 'row',
+}
+export const usingCss = Template.bind({})
+usingCss.args = {
   ...Basic.args,
   css: {
     alignItems: 'center',

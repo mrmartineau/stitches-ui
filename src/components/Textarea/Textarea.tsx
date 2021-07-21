@@ -9,10 +9,6 @@ export const Textarea = styled('textarea', {
   fontSize: 'inherit',
   fontFamily: 'inherit',
   lineHeight: 'inherit',
-  border: '1px solid $colors$coolGray400',
-  borderRadius: '$default',
-  color: 'inherit',
-  bg: 'transparent',
 
   ...sharedInputStyles,
 })

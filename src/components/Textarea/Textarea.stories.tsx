@@ -19,6 +19,6 @@ const Template: Story = (args) => <Textarea {...args} />
 
 export const Basic = Template.bind({})
 Basic.args = {
-  children: 'A basic textarea',
+  defaultValue: 'A basic textarea',
   rows: 8,
 }

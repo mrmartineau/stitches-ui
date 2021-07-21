@@ -2,12 +2,15 @@ import { focusVisibleOutset } from '../../theme/focus.styles'
 import { styled } from '../../theme/stitches.config'
 
 export const sharedInputStyles = {
+  bg: '$background',
+  border: '1px solid $colors$coolGray400',
+  borderRadius: '$default',
+  color: '$text',
+  fontVariantNumeric: 'tabular-nums',
   ...focusVisibleOutset,
-
   '&:focus': {
     borderColor: '$primary',
   },
-
   '&:disabled,&:read-only': {
     backgroundColor: '$coolGray200',
     borderColor: '$coolGray400',
@@ -38,12 +41,6 @@ export const Input = styled('input', {
   padding: 0,
   width: '100%',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-
-  backgroundColor: '$background',
-  border: '1px solid $colors$coolGray400',
-  borderRadius: '$default',
-  color: '$text',
-  fontVariantNumeric: 'tabular-nums',
 
   ...sharedInputStyles,
 

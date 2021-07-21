@@ -6,9 +6,18 @@ As a long-time fan of [Theme UI](https://theme-ui.com) I wanted to see how I mig
 
 This experiment includes enough of Theme UI's components and functionality to enable me to properly evaluate Stitches.
 
+ℹ️ The styles do not match Theme UI's default styles
+
+## Important/example files
+
+- [stitches.config.ts](./src/theme/stitches.config.ts)
+- [`<Box />` component](./src/components/Box/Box.tsx)
+- [`<Flex />` component](./src/components/Flex/Flex.tsx)
+- [`<Heading />` component](./src/components/Heading/Heading.tsx)
+
 ## Demo
 
-Storybook:
+[stitches-ui.vercel.app](https://stitches-ui.vercel.app)
 
 <a href="https://open.vscode.dev/mrmartineau/stitches-ui">
   <img
